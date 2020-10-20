@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container_frg_chat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:fragment="activities.ChatActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/custom_toolbar"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/img_background_chat_frg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                tools:src="@drawable/chat_background"
+                android:alpha="0.6"/>
+
+
+            <LinearLayout
+                android:id="@+id/container_no_chats_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:lottie_loop="true"
+                    android:layout_margin="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_rawRes="@raw/logo"/>
+
+                <Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_msg"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/flat_red_box"/>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_chat_frg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_scroll_chat_frg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_man_avatar"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@android:color/white">
+
+
+            <ImageView
+                android:id="@+id/emoji_frg_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_emoji"
+                android:layout_margin="5dp"
+                android:onClick="onClick"/>
+
+            <Custom.EmojiEdt
+                android:id="@+id/edt_txt_frg_chat"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLines="10"
+                android:maxLength="950"
+                android:imeOptions="actionSend"
+                android:layout_toStartOf="@+id/emoji_frg_chat"
+                android:layout_toEndOf="@+id/container_send_or_attach"
+                android:padding="2dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/label_hint_edt_send_chat"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/container_send_or_attach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/attachment_chat_files"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/ic_attachment"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onClick"/>
+
+
+                <ImageView
+                    android:id="@+id/img_send_txt_chat"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/ic_send"
+                    android:onClick="onClick"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

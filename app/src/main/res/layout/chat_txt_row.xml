@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container_txt_row_chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="start"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Custom.EmojiTxt
+        android:id="@+id/txt_row_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flat_red_box"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        tools:text="@string/app_name"
+        />
+
+
+    <Custom.CustomTextView
+        android:id="@+id/txt_row_time_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="1396/05/13"/>
+
+
+
+</LinearLayout>

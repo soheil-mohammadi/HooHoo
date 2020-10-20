@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container_img_row_chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="start"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <info.abdolahi.CircularMusicProgressBar
+        android:id="@+id/prg_img_row_chat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_gallery"
+        app:border_color="#00796B"
+        app:border_width="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:centercircle_diammterer="1"
+        app:progress_color="#80CBC4"
+        app:progress_startAngle="40"
+        app:draw_anticlockwise="false"/>
+
+
+    <RelativeLayout
+        android:id="@+id/container_img_complete_row_chat"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:gravity="end"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_complete_row_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_char_4"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+        <Custom.CustomTextView
+            android:id="@+id/txt_img_row_time_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_container_dark"
+            android:layout_alignParentBottom="true"
+            tools:text="..."/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+

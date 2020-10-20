@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CircularTextView">
+        <attr name="circle_color" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="HeightAspectImageButton">
+        <attr name="aspect" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="isBold" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="isBoldEdt" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomButton">
+        <attr name="isBoldButton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEmojiTxt">
+        <attr name="isBoldEmojiTxt" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomEmojiEdt">
+        <attr name="isBoldEmojiEdt" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="editor">
+        <attr name="render_type" format="string"/>
+        <attr name="placeholder" format="string"/>
+        <attr name="auto_focus" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="GaugeView">
+        <attr name="gauge_backgroundColor" format="color" />
+        <attr name="gauge_fillColor" format="color" />
+        <attr name="gauge_strokeWidth" format="dimension" />
+        <attr name="gauge_startAngle" format="integer" />
+        <attr name="gauge_angles" format="integer" />
+        <attr name="gauge_maxValue" format="integer" />
+    </declare-styleable>
+
+
+
+    <attr name="pickerBackgroundColor" format="reference|color" />
+    <attr name="pickerPrimaryColor" format="reference|color" />
+    <attr name="pickerSecondaryColor" format="reference|color" />
+    <attr name="pickerControlColor" format="reference|color" />
+    <attr name="pickerGalleryIcon" format="reference" />
+    <attr name="pickerCameraIcon" format="reference" />
+    <attr name="pickerCornerRadius" format="reference|dimension" />
+    <attr name="pickerDividerColor" format="reference|color" />
+
+
+
+    <declare-styleable name="BarcodeView">
+        <attr name="setAutoFocus" format="boolean"/>
+        <attr name="setFlash" format="boolean"/>
+        <attr name="setBeepSound" format="boolean"/>
+        <attr name="setVibration" format="integer"/>
+        <attr name="setFacing" format="enum">
+            <enum name="back" value="0"/>
+            <enum name="front" value="1"/>
+        </attr>
+        <attr name="setBarcodeFormats">
+            <flag name="all" value="0"/>
+            <flag name="code_128" value="1"/>
+            <flag name="code_39" value="2"/>
+            <flag name="code_93" value="4"/>
+            <flag name="codebar" value="8"/>
+            <flag name="data_matrix" value="16"/>
+            <flag name="ean_13" value="32"/>
+            <flag name="ean_8" value="64"/>
+            <flag name="itf" value="128"/>
+            <flag name="qr_code" value="256"/>
+            <flag name="upc_a" value="512"/>
+            <flag name="upc_e" value="1024"/>
+            <flag name="pdf417" value="2048"/>
+            <flag name="aztec" value="4096"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="servers.monitor.fastest.hoohoonew">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:appComponentFactory="whateverString"
+        android:supportsRtl="false"
+        tools:replace="supportsRtl,appComponentFactory"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="activities.IntroActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="lv.chi.photopicker.utils.CameraActivity"/>
+
+
+        <provider
+            android:name="providers.GalleryProvider"
+            android:authorities="hoohoo.new.photoProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity android:name="com.greentoad.turtlebody.docpicker.ui.components.ActivityLibMain"/>
+
+
+        <provider
+            android:name="providers.DocProvider"
+            android:authorities="hoohoo.new.docProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+
+        </provider>
+
+
+        <service
+            android:name="service.ServerService"
+            android:exported="false"/>
+        <service
+            android:name="service.ClientService"
+            android:exported="false"/>
+
+        <service
+            android:name="service.HotspotShutService"
+            android:exported="false"/>
+
+        <service
+            android:name="service.P2PShutService"
+            android:exported="false"/>
+
+        <activity
+            android:name="activities.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b74d069dd9ed94888f41f404b7c7b39e302a5a49"/>
+    </application>
+
+</manifest>

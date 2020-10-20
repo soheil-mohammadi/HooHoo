@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_dialog_corner"
+        android:layout_margin="10dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/container_connecting_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:lottie_rawRes="@raw/loading"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_connecting_to_device_discover_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="connecting ...."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                app:isBold="true"
+                />
+
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_not_found_key_device_discover_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finding_to_get_a_good_way_to_connect"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:background="@drawable/flat_warning_box"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_barcode_scanner_discover_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:lottie_rawRes="@raw/barcode"
+                app:lottie_autoPlay="true"
+                android:layout_margin="15dp"
+                app:lottie_loop="true"/>
+
+
+            <com.barcode.scanner.BarcodeView
+                android:id="@+id/barcodeView_discover_dialog"
+                android:layout_width="160dp"
+                android:layout_height="160dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/container_grant_camera_permission_discover_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_marginEnd="10dp"/>
+
+                    <Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="@string/hoohoo_need_camera_permission"/>
+
+
+
+                </LinearLayout>
+
+
+                <life.sabujak.roundedbutton.RoundedButton
+                    android:id="@+id/btn_grant_camera_permission_discover_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:fontFamily="@font/isans"
+                    android:textSize="15sp"
+                    android:text="@string/access_camera"
+                    android:textColor="@android:color/white"
+                    app:buttonGradientStartColor="@color/colorAccent"
+                    app:buttonGradientEndColor="@color/colorAccent"
+                    app:buttonCornerRadius="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/select_barcode_generator_on_other_device_then_scan_barcode_to_connect"
+                android:textColor="@android:color/black"
+                android:layout_margin="25dp"
+                android:textSize="15sp"
+                app:isBold="true"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_searching_chats_available"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_preview_chats_searching"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"/>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/loading"
+                app:lottie_loop="true"/>
+
+            <Custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_in_searching"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                app:isBold="true"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_not_found_searching_chats_available"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/searching"/>
+
+            <Custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_did_not_find_any_device"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                />
+
+
+
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/btn_again_search_chats_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/isans"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="17sp"
+                android:onClick="onClick"
+                android:text="@string/label_try_again"
+                android:textColor="@android:color/white"
+                app:buttonGradientStartColor="@color/colorAccent"
+                app:buttonGradientEndColor="@color/colorAccent"
+                app:buttonCornerRadius="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/container_chats_available"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_device_list_found"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/flat_red_box"
+                android:textColor="@android:color/white"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_chats_available"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/btn_cancel_discover_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/isans"
+            android:textSize="16sp"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            app:buttonGradientStartColor="@color/colorPrimaryDark"
+            app:buttonGradientEndColor="@color/colorPrimary"
+            app:buttonCornerRadius="5dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

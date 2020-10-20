@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@color/colorAccent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:isBold="true"
+                android:text="@string/personal_information_intro_page"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar_app_intro"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/select_avatar_app_intro"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/ic_camera"
+                    android:onClick="onClick"
+                    app:layout_anchor="@id/img_avatar_app_intro"
+                    app:layout_anchorGravity="bottom|right"
+                    />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+
+                <Custom.CustomEditText
+                    android:id="@+id/edt_user_display_name_app_intro"
+                    android:layout_width="match_parent"
+                    android:hint="@string/hint_edt_user_display_name_intro"
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:maxLength="10"
+                    android:padding="15dp"
+                    android:textColorHint="#D5D2D2"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/flat_edt_box"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/ic_avatar"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+                <Custom.CustomEditText
+                    android:id="@+id/edt_user_bio_app_intro"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:hint="@string/hint_edt_user_bio_intro_page"
+                    android:textSize="14sp"
+                    android:padding="15dp"
+                    android:maxLength="20"
+                    android:textColorHint="#D5D2D2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_biography"
+                    android:drawablePadding="8dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/flat_edt_box"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:srcCompat="@drawable/ic_gender"
+                        />
+
+                    <Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:gravity="center|start"
+                        android:text="@string/lable_sex_intro_page"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/swc_sex_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|end"
+                        android:thumb="@drawable/switch_bg_gender"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/container_document_row_chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="start"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/container_document_open_row_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/flat_red_box"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+        <Custom.ProgressBarIndicator
+            android:id="@+id/progress_bar_document_file"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            tools:text="۲۰٪"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            />
+
+
+        <Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_document"
+            android:textColor="@android:color/white"
+            />
+
+
+        <ImageView
+            android:id="@+id/img_document_row_time_msg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_document"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <Custom.CustomTextView
+        android:id="@+id/txt_document_row_time_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        tools:text="1396/05/13"/>
+
+
+
+</LinearLayout>
+
+
+
+

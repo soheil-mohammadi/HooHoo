@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_toolbar"/>
+
+
+        <LinearLayout
+            android:id="@+id/container_getting_installed_apps_frg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/apk_loading"
+                />
+
+            <Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/in_getting_apps"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_installed_apps_frg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/container_selected_installed_apps_frg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/back_container_dark">
+
+
+        <Custom.CustomTextView
+            android:id="@+id/txt_selected_count_installed_apps_frg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3 Apps Selected"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/btn_select_installed_apps_frg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:fontFamily="@font/isans"
+            android:textSize="15sp"
+            android:onClick="onClick"
+            android:text="@string/select"
+            android:textColor="@android:color/white"
+            app:buttonGradientStartColor="@color/colorAccent"
+            app:buttonGradientEndColor="@color/colorPrimary"
+            app:buttonCornerRadius="3dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

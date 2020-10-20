@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container_row_chat_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_row_chat_list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        tools:src="@drawable/ic_man_avatar"
+        android:scaleType="centerCrop"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start|center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <Custom.CustomTextView
+                    android:id="@+id/txt_user_name_row_chat_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    tools:text="@string/app_name"/>
+
+                <Custom.EmojiTxt
+                    android:id="@+id/txt_last_msg_row_chat_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:text="@string/app_name"/>
+
+
+            </LinearLayout>
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_date_row_chat_list"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start|center"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
+                tools:text="۳ مرداد"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view_line_between_row_chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#a3a1a1"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+

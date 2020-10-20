@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/container_audio_row_chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="start"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:id="@+id/container_audio_play_row_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/flat_red_dark_box">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+
+            <Custom.ProgressBarIndicator
+                android:id="@+id/progress_bar_audio_file"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:layout_marginEnd="5dp"
+                tools:text="۲۰٪"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                />
+
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_audio_artist_chat_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_music"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/white"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_audio_chat_row"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_audio"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <Custom.CustomTextView
+            android:id="@+id/txt_audio_row_time_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_container_dark"
+            android:layout_margin="10dp"
+            tools:text="1396/05/13"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

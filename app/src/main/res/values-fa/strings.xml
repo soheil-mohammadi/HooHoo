@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HooHooNew</string>
+
+    <!--<string name="yes">باشه</string>-->
+    <!--<string name="cancel">بیخیال</string>-->
+    <!--<string name="hoohoo">HooHoo</string>-->
+    <!--<string name="share_using">اشتراک گذاری با</string>-->
+
+
+    <!--<string name="report_issue_of_app_name">گزارش یک مشکل از هوهو</string>-->
+    <!--<string name="not_found_act_for_handle">هیچ برنامه ای برای انجام این اقدام وجود ندارد !</string>-->
+    <!--<string name="label_in_preparing_splash">در حال آماده سازی</string>-->
+    <!--<string name="label_conversations">گفتگوها</string>-->
+    <!--<string name="label_search_have_not_result">جستجو نتیجه ای نداشت !</string>-->
+    <!--<string name="lable_there_is_not_any_conversations">گفتگویی وجود ندارد</string>-->
+    <!--<string name="share_app">اشتراک گذاشتن هوهو</string>-->
+    <!--<string name="communication_with_developer">تماس با برنامه نویس</string>-->
+    <!--<string name="label_mini_dex_app_developer_and_version">توسعه دهنده : سهیل محمدی - هوهو اندروید - ۱.۴.۹</string>-->
+    <!--<string name="chats">گفتگوها</string>-->
+    <!--<string name="black_list">بلاک شده ها</string>-->
+    <!--<string name="label_there_is_no_any_block_chat">هیچ شخصی مسدود نشده</string>-->
+    <!--<string name="label_in_searching">در حال یافتن دوستان ...</string>-->
+    <!--<string name="label_did_not_find_any_device">هیچ فردی پیدا نشد !</string>-->
+    <!--<string name="label_try_again">تلاش دوباره</string>-->
+    <!--<string name="label_device_list_found">دوستان در دسترس</string>-->
+    <!--<string name="discovering_started">جستجو شروع شد ...</string>-->
+    <!--<string name="connection_failed">اتصال برقرار نشد ... دوباره تلاش کنید</string>-->
+    <!--<string name="connecting_to_device">در حال اتصال به %s</string>-->
+    <!--<string name="label_hint_edt_send_chat">متن پیام</string>-->
+
+    <!--<string name="app_description_intro">هوهو یک برنامه برای به اشتراک گذاری اطلاعات با بالاترین سرعت ممکنه‌!</string>-->
+    <!--<string name="introduction">معرفی</string>-->
+    <!--<string name="label_select_app_language">انتخاب زبان برنامه</string>-->
+    <!--<string name="personal_information_intro_page">مشخصات فردی در هوهو</string>-->
+    <!--<string name="hint_edt_user_display_name_intro">نام نمایشی  : سهیل</string>-->
+    <!--<string name="lable_sex_intro_page">جنسیت : </string>-->
+    <!--<string name="hint_edt_user_bio_intro_page">درباره من ...</string>-->
+    <!--<string name="label_select_avatar_intro_page">انتخاب عکس پروفایل</string>-->
+
+    <!--<string name="picker_app_name">Picker</string>-->
+    <!--<string name="picker_gallery">گالری</string>-->
+    <!--<string name="picker_camera">دوربین</string>-->
+    <!--<string name="picker_select">انتخاب</string>-->
+    <!--<string name="picker_media_permissions_hint">Grant media permission for easier\ngallery access</string>-->
+    <!--<string name="picker_empty_media">Your media library is empty</string>-->
+    <!--<string name="picker_allow">اجازه دادن</string>-->
+    <!--<string name="picker_select_photo">انتخاب عکس</string>-->
+    <!--<string name="picker_no_camera">هیچ دوربینی نصب نیست !</string>-->
+    <!--<string name="choose_user_name">یک نام انتخاب کنید !</string>-->
+    <!--<string name="undo">برگشت</string>-->
+    <!--<string name="start_msg">شروع گفتگو ...</string>-->
+    <!--<string name="initializing">در حال آماده سازی ...</string>-->
+    <!--<string name="leave_chat">ترک گفتگو</string>-->
+    <!--<string name="you_want_leave_chat">به گفتگو خاتمه میدهید ؟</string>-->
+    <!--<string name="audio">صدا</string>-->
+    <!--<string name="video">ویدیو</string>-->
+    <!--<string name="docuement">سند/فایل</string>-->
+    <!--<string name="connection_disconnected">اتصال به پایان رسید</string>-->
+    <!--<string name="cant_send_until_befores_completed">قادر به ارسال فایل جدید تا ارسال کامل موارد قبل نیست !</string>-->
+    <!--<string name="label_music">صدا</string>-->
+    <!--<string name="label_document">سند/فایل</string>-->
+    <!--<plurals name="picker_selected_count">-->
+        <!--<item quantity="one"> %d عکس انتخاب شد</item>-->
+        <!--<item quantity="other">%d عکس انتخاب شدند</item>-->
+    <!--</plurals>-->
+    <!--<plurals name="picker_max_selection_reached">-->
+        <!--<item quantity="one">فقط %d عکس میتوانید انتخاب کنید</item>-->
+        <!--<item quantity="other">فقط %d عکس میتوانید انتخاب کنید</item>-->
+    <!--</plurals>-->
+
+</resources>

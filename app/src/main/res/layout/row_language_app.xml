@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container_row_language_app"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_box_row_language_app"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:theme="@style/CustomSwitchStyle"
+        android:checked="false"/>
+
+    <ImageView
+        android:id="@+id/img_logo_row_language_app"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        tools:src="@drawable/ic_iran"
+        android:layout_margin="10dp"/>
+
+    <Custom.CustomTextView
+        android:id="@+id/txt_language_row_language_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:text="Persian"/>
+
+
+</LinearLayout>

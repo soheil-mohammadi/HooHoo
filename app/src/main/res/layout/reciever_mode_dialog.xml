@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_margin="10dp"
+                  android:background="@drawable/back_dialog_corner"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:id="@+id/img_barcode_generator_recieve_mode_dialog"
+                android:layout_width="45dp"
+                android:layout_gravity="start|center"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_barcode"/>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:lottie_rawRes="@raw/recieve_mode"
+                app:lottie_autoPlay="true"
+                android:layout_margin="5dp"
+                app:lottie_loop="true"/>
+
+
+            <ImageView
+                android:id="@+id/img_barcode_recieve_mode_dialog"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_barcode"/>
+
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_state_recieve_mode_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/initializing_for_reciever_mode"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                app:isBold="true"
+                />
+
+
+            <Custom.CustomTextView
+                android:id="@+id/txt_waiting_recieve_mode_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/waiting_for_other_device"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                app:isBold="true"
+                />
+
+
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/btn_cancel_recieve_mode_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/isans"
+                android:textSize="16sp"
+                android:onClick="onClick"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white"
+                app:buttonGradientStartColor="@color/colorPrimaryDark"
+                app:buttonGradientEndColor="@color/colorPrimary"
+                app:buttonCornerRadius="5dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

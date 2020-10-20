@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">HooHooNew</string>
+    <string name="yes">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hoohoo">HooHoo</string>
+    <string name="share_using">Share Using</string>
+
+
+    <string name="report_issue_of_app_name">Report an issue of  HooHoo</string>
+    <string name="not_found_act_for_handle">No program was found to manage this section!</string>
+    <string name="label_in_preparing_splash">Preparing ...</string>
+    <string name="label_conversations">Conversations</string>
+    <string name="label_search_have_not_result">The search did not have any result</string>
+    <string name="lable_there_is_not_any_conversations">There is no conversation</string>
+    <string name="share_app">Share</string>
+    <string name="communication_with_developer">Contact / Report</string>
+    <string name="label_mini_dex_app_developer_and_version">Developer: Pars Digital - HooHoo (New Edition) Android - 1.0.5</string>
+    <string name="chats">Chats</string>
+    <string name="black_list">Black list</string>
+    <string name="label_there_is_no_any_block_chat">There are no blocked people</string>
+    <string name="label_in_searching">Looking for Nearby People ...</string>
+    <string name="label_did_not_find_any_device">No device found nearby</string>
+    <string name="label_try_again">Try Again</string>
+    <string name="label_device_list_found">People list available</string>
+    <string name="discovering_started">discovering started ...</string>
+    <string name="connection_failed">Connection failed . Try again ...</string>
+    <string name="connecting_to_device">Connecting to %s</string>
+    <string name="label_hint_edt_send_chat">Message</string>
+
+    <string name="app_description_intro">HooHoo is a software platform for fast data exchange</string>
+    <string name="introduction">Introduction</string>
+    <string name="label_select_app_language">Select the application language</string>
+    <string name="personal_information_intro_page">Individual information in HooHoo</string>
+    <string name="hint_edt_user_display_name_intro">Dramatic Name: Soheil</string>
+    <string name="lable_sex_intro_page">Gender :</string>
+    <string name="hint_edt_user_bio_intro_page">My biography …</string>
+    <string name="label_select_avatar_intro_page">Select your avatar profile</string>
+
+    <string name="picker_app_name">Picker</string>
+    <string name="picker_gallery">Gallery</string>
+    <string name="picker_camera">Camera</string>
+    <string name="picker_select">Select</string>
+    <string name="picker_media_permissions_hint">Grant media permission for easier\ngallery access</string>
+    <string name="picker_empty_media">Your media library is empty</string>
+    <string name="picker_allow">Allow</string>
+    <string name="picker_select_photo">Select photo</string>
+    <string name="picker_no_camera">No camera app is installed</string>
+    <string name="choose_user_name">Choose a user name please !</string>
+    <string name="undo">Undo</string>
+    <string name="start_msg">Start Messaging ...</string>
+    <string name="initializing">Initializng ...</string>
+    <string name="leave_chat">Leave chat</string>
+    <string name="you_want_leave_chat">Do you want to leave chat ?</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="docuement">Docuement</string>
+    <string name="connection_disconnected">Chat connection disconnected !</string>
+    <string name="cant_send_until_befores_send_completed">Can not send until all files send ...</string>
+    <string name="cant_send_until_befores_recieve_completed">Can not send until all files recieve ...</string>
+    <string name="label_music">Audio</string>
+    <string name="label_document">Document</string>
+    <string name="cant_send_special_chars">Can not send special charavters !</string>
+    <string name="reciever_need_mb_space">You need %s Mbs free space on your device </string>
+    <string name="send_need_mb_space">%s needs %s Mbs free space on his device to recieve yor file ! </string>
+    <string name="storage_needed">Storage needed !</string>
+    <plurals name="picker_selected_count">
+        <item quantity="one">%d photo selected</item>
+        <item quantity="other">%d photos selected</item>
+    </plurals>
+    <plurals name="picker_max_selection_reached">
+        <item quantity="one">You can pick only %d image</item>
+        <item quantity="other">You can pick only %d images</item>
+    </plurals>
+
+
+    <string name="lable_ago_secs"> %d Seconds Ago </string>
+    <string name="lable_ago_mins"> %d Minutes Ago </string>
+    <string name="lable_ago_hours"> %d Hours Ago </string>
+    <string name="cant_send_msg_when_offline">Cant send message when you are not connected !</string>
+    <string name="label_permission_request">Permission Request</string>
+    <string name="label_permission_is_require">(If the request is not accepted by you, the program will be forced to leave)</string>
+    <string name="hoohoo_need_storage_permission">HooHoo need to access storage of device to manage files</string>
+    <string name="no_app_found_to_handle_intent">There are no apps to handle this file !</string>
+    <string name="preparing_chat">Preparing chat ...</string>
+    <string name="preparing_chat_desc">It is preparing chat . please wait ...</string>
+    <string name="hoohoo_need_location_permission">On Android 8+ HooHoo needs to access location to find nearby devices</string>
+    <string name="enable_location">Enable location</string>
+    <string name="enable_location_desc">Please enable location service in settings to discovery start</string>
+    <string name="modify_system_settings">Modify system settings</string>
+    <string name="modify_system_settings_desc">For discovering with other device , HooHoo needs permission to modify system settings</string>
+    <string name="hoohoo_version_name">HooHoo New - Version : %s</string>
+    <string name="avatar_cant_big_volume">avatar cant be bigger than 3 MB</string>
+    <string name="apps">Apps</string>
+    <string name="in_getting_apps">loading apps ...</string>
+    <string name="select">Select</string>
+    <string name="selected_apps_count">%d Apps selected</string>
+    <string name="app_volume_mb">%d Mb</string>
+    <string name="choose_avatar_please">Choose a avatar please !</string>
+    <string name="empty_bio">No bio is here !</string>
+    <string name="not_in_reciever_mode">By this you are not in reiever mode</string>
+    <string name="dont_show_again">dont show again</string>
+    <string name="reciever_mode">Reciever Mode</string>
+    <string name="reciever_mode_enabled">You are discoverable by other device</string>
+    <string name="initializing_for_reciever_mode">Initializing For Reciever Mode ...</string>
+    <string name="waiting_for_other_device">waiting for other device ...</string>
+    <string name="discovrable_by_name">You are discoverable by %s</string>
+    <string name="finding_to_get_a_good_way_to_connect">finding to get a good way to connect ...</string>
+    <string name="select_barcode_generator_on_other_device_then_scan_barcode_to_connect">select barcode generator on other device then scan barcode to connect</string>
+    <string name="hoohoo_need_camera_permission">HooHoo needs camera permission</string>
+    <string name="access_camera">Access Camera</string>
+
+</resources>

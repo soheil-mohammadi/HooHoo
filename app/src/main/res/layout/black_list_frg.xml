@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat_list_frg"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/container_no_chat_list_frg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/ic_black"
+            />
+
+
+        <Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/flat_red_box"
+            android:text="@string/label_there_is_no_any_block_chat"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

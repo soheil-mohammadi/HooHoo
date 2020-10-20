@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back_dialog_corner_without_padding"
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/img_avatar_back_chat_profile_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:alpha="0.8"
+        tools:src="@drawable/ic_man_avatar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/flat_accent_box"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar_chat_profile_dialog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_char_7"/>
+
+        <Custom.CustomTextView
+            android:id="@+id/txt_name_chat_profile_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Soheil"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/flat_red_dark_box"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_margin="15dp"/>
+
+
+        <Custom.CustomTextView
+            android:id="@+id/txt_bio_chat_profile_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="About Soheil is here ...."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

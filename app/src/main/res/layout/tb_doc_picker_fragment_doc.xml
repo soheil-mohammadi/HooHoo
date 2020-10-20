@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/offset_2"
+        android:id="@+id/doc_fragment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/length_56"
+        tools:listitem="@layout/tb_doc_picker_item_doc"/>
+
+    <LinearLayout
+        android:id="@+id/doc_fragment_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_black_1000_15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_56"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@color/tb_doc_picker_primary"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/offset_6"
+            android:paddingLeft="@dimen/offset_16"
+            android:paddingEnd="@dimen/offset_16"
+            android:paddingRight="@dimen/offset_16"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="@dimen/length_24"
+                android:layout_height="@dimen/length_24"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_margin="@dimen/offset_8"
+                android:foreground="@drawable/tb_doc_picker_sc_ripple_black_alpha_25">
+
+                <ImageView
+                    android:id="@+id/doc_fragment_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/tb_doc_picker_ic_tb_doc_picker_filter"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/doc_fragment_ll_for_selected_docs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/offset_3"
+                android:paddingLeft="@dimen/offset_3"
+                android:paddingEnd="@dimen/offset_3"
+                android:paddingRight="@dimen/offset_3"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/doc_fragment_btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textSize="@dimen/font_14"
+                android:theme="@style/App.Button.Primary"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textAppearance="@style/App.TextAppearance.h4.Title"
+                android:textColor="@color/md_white_1000"
+                android:layout_marginTop="@dimen/offset_6"
+                android:layout_marginBottom="@dimen/offset_6"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/tb_doc_picker_frame_progress"/>
+
+</FrameLayout>

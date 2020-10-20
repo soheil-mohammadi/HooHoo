@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/container_installed_app_item"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:padding="10dp"
+              android:clickable="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_logo_installed_app_item"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_android"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/ch_app_installed_app_item"
+            android:layout_width="wrap_content"
+            android:button="@drawable/round_check_box"
+            app:layout_anchor="@id/img_logo_installed_app_item"
+            app:layout_anchorGravity="end|top"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <Custom.CustomTextView
+        android:id="@+id/txt_app_name_installed_app_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="WhatsApp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center"/>
+
+    <Custom.CustomTextView
+        android:id="@+id/txt_app_volume_installed_app_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="21Mb"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>
